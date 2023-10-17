@@ -117,7 +117,6 @@ body{
 
 /*------------------以下是Login以及整體介面配置-------------------------------------------------------------*/
 
-
 .wrapper .form-box-Login{
     transition: transform .18s ease;
     transform: translateX(0);
@@ -138,6 +137,45 @@ h2{
     font-size: 2em;
     color: #fff;
     text-align: center;
+}
+.text-box{
+    width: 100%;
+    height: 82%;
+    top: 15%;
+    position: absolute;
+    text-align: center;
+    transform: scale(1);
+    transition: transform .5s ease, height .2s ease;
+}
+.text-box h1 {
+    font-size: 160px;
+    color: transparent;
+    -webkit-text-stroke: .1px rgba(255,255,255,0.5);
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+
+    animation: fadeIn 5s, back 20s linear infinite;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 0s, .1s;
+    transition: transform .5s ease, height .2s ease;
+    transition: transform .18s ease;
+    transform: translateY(0);
+}
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.text-box.active-text  h1{ 
+    transition: transform .18s ease;
+    transform: translateY(-800px);
 }
 .inputbox{
     position: relative;
@@ -287,6 +325,7 @@ input[type="password"]::-webkit-reveal {
 .form-box-Choose button:hover{
     background: #fff;
     color: #162938;
+    transition: .5s;
 }
 .login-link{
     font-size: .9em;

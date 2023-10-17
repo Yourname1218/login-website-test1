@@ -1,3 +1,4 @@
+const text_box = document.querySelector('.text-box');
 const wrapper = document.querySelector('.wrapper');
 const loginlink = document.querySelector('.login-link');
 const loginlink_student = document.querySelector('.login-link2');
@@ -43,8 +44,13 @@ loginlink_teacher.addEventListener('click', ()=>{
 
 btnLogin.addEventListener('click', ()=>{
     wrapper.classList.add('active-login');
+    text_box.classList.add('active-text');
 });
 
 iconClose.addEventListener('click', ()=>{
     wrapper.classList.remove('active-login');
+    text_box.classList.remove('active-text');
+    wrapper.classList.remove('active');
+    wrapper.classList.remove('active-student');
+    wrapper.classList.remove('active-teacher');
 });
