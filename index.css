@@ -384,11 +384,11 @@ input[type="password"]::-webkit-reveal {
     transition: transform .18s ease;
     transform: translateX(800px);
 }
-.wrapper.wrapper.active-student .form-box-Register-teacher{
+.wrapper.active-student .form-box-Register-teacher{
     transition: transform .18s ease;
     transform: translateX(400px);
 }
-.wrapper.wrapper.active-teacher .form-box-Register-teacher{
+.wrapper.active-teacher .form-box-Register-teacher{
     transition: transform .18s ease;
     transform: translateX(0);
 }
