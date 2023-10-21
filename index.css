@@ -98,7 +98,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+/*     overflow: hidden; */
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
 }
