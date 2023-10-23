@@ -148,10 +148,10 @@ h2{
     transition: transform .5s ease, height .2s ease;
 }
 .text-box h1 {
-    font-size: 160px;
+    font-size: 7vw;
     color: transparent;
     -webkit-text-stroke: .1px rgba(255,255,255,0.5);
-    background: url(back.png);
+    background: url(images/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
 
