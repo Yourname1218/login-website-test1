@@ -30,19 +30,22 @@
                         <ion-icon name="mail-outline"></ion-icon>
                         <input type="email" id="inputemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninput="checkEmail()" placeholder=" " required>
                         <label for = "">Email</label>
-                        <p id="mesemail"></p>
                     </div>
                     <div class = "inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
                         <input type="password" id="pwd" placeholder=" " required>
                         <label for = "">Password</label>
-                        <P id="wrongtext"></P>
+                    </div>
+                    <div class = "inputbox">
+                        <ion-icon name="finger-print-outline"></ion-icon>
+                        <input type="text" placeholder=" " name="captcha" id="Cap" required>
+                        <label for = "captcha">Captcha: <span id="captcha"></span></label>
                     </div>
                     <div class="forget">
                         <label for = ""><input type="checkbox">Remember Me <a href="#">Forget Password</a></label>
                     </div>
                     <div class="button" id="loginButton">
-                        <button>Login</button>
+                        <button onclick="validateCaptcha()">Login</button>
                     </div>
                     <div class="register-link">
                         <p>Don't have an account <a href="#">Register</a></p>
@@ -78,7 +81,6 @@
                         <ion-icon name="mail-outline"></ion-icon>
                         <input type="email" id="inputemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninput="checkEmail()" placeholder=" " required>
                         <label for = "">Email</label>
-                        <p id="mesemail"></p>
                     </div>
                     <div class = "inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
@@ -115,7 +117,6 @@
                         <ion-icon name="mail-outline"></ion-icon>
                         <input type="email" id="inputemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninput="checkEmail()" placeholder=" " required>
                         <label for = "">Email</label>
-                        <p id="mesemail"></p>
                     </div>
                     <div class = "inputbox">
                         <ion-icon name="cloud-upload-outline"></ion-icon>
